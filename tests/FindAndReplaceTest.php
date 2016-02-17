@@ -5,20 +5,20 @@
     class FindAndReplaceTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_makeTitleCase_oneWord()
+        function test_FindAndReplace_oneWord()
         {
             //Arrange
             $test_FindAndReplace = new FindAndReplace;
-            $string = "beowulf";
-            $find = "";
-            $change = "";
+            $string = "Hello";
+            $find = "Hello";
+            $change = "Goodbye";
 
-            //Act: runs the actual method that we are testing.
-            $result = $test_FindAndReplace->makeTitleCase($input);
+            //Act
+            $result = $test_FindAndReplace->swapWords($string, $find, $change);
 
-            //Assert tells our tests what to expect from the output of our method.
-            $this->assertEquals("Beowulf", $result);
-        }  // we will declare a method to run our first test. When we run PHPUnit, our test class will be instantiated and each of its methods will be executed.
+            //Assert
+            $this->assertEquals("Goodbye", $result);
+        }
     }
 
     // Run in terminal in project folder

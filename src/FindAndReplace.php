@@ -10,15 +10,18 @@
     //         $this->name = $contact_name;
     //     }
     //
-    // // SAVE, getAll(), deleteAll()
-    //     function save()
-    //     {
-    //         array_push($_SESSION['list_of_contacts'], $this);
-    //     }
-    //     static function getAll()
-    //     {
-    //         return $_SESSION['list_of_contacts'];
-    //     }
+            function swapWords($string, $find, $change)  // input is "string"
+            {
+                $string_array = explode(" ", $string);  // "array"
+                foreach ($string_array as $index => $word) {
+                    if ($word == $find) {
+                        $string_array[$index] = $change;
+                    }
+                }
+                $final_string = implode(" ", $string_array);
+                return $final_string;
+            }
+
 
     }
 ?>
