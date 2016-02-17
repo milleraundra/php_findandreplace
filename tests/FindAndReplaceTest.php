@@ -10,7 +10,7 @@
             //Arrange
             $test_FindAndReplace = new FindAndReplace;
             $string = "Hello";
-            $find = "hello";
+            $find = "Hello";
             $change = "Goodbye";
 
             //Act
@@ -25,14 +25,14 @@
             //Arrange
             $test_FindAndReplace = new FindAndReplace;
             $string = "Hello, World";
-            $find = "hello";
-            $change = "Goodbye, World";
+            $find = "Hello";
+            $change = "Goodbye";
 
             //Act
             $result = $test_FindAndReplace->swapWords($string, $find, $change);
 
             //Assert
-            $this->assertEquals("Goodbye", $result);
+            $this->assertEquals("Goodbye, World", $result);
         }
     }
 

@@ -10,21 +10,31 @@
     //         $this->name = $contact_name;
     //     }
     //
-            function swapWords($string, $find, $change)  // input is "string"
-            {
-                $string_array = explode(" ", $string);  // "array"
-                foreach ($string_array as $index => $word) {
-                    $string_array[$index] = strtolower($string_array[$index]);
-                    $find = strtolower($find);
+        function swapWords($string, $find, $change)  // input is "string"
+        {
+            $string_array = explode(" ", $string);  // "array"
+            foreach ($string_array as $index => $word) {
 
-                    if ($string_array[$index] == $find) {
-                        $string_array[$index] = $change;
-                    }
-                }
-                $final_string = implode(" ", $string_array);
-                return $final_string;
+                $string_array[$index] = str_replace($find, $change, $string_array[$index]);
+
+
             }
+            $final_string = implode(" ", $string_array);
+            return $final_string;
+        }
 
 
     }
+
+
+//$string_array[$index] = strtolower($string_array[$index]);
+//$find = strtolower($find);
+
+// if ($string_array[$index] == $find) {
+//     $string_array[$index] = $change;
+// }
+
+
+
+
 ?>
