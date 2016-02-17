@@ -32,8 +32,23 @@
             $result = $test_FindAndReplace->swapWords($string, $find, $change);
 
             //Assert
-            $this->assertEquals("Goodbye, World", $result);
+            $this->assertEquals("Goodbye World", $result);
         }
+
+        // function test_FindAndReplace_multipleWords()
+        // {
+        //     //Arrange
+        //     $test_FindAndReplace = new FindAndReplace;
+        //     $string = "If I were an apple hanging on a tree";
+        //     $find = "an";
+        //     $change = "a";
+        //
+        //     //Act
+        //     $result = $test_FindAndReplace->swapWords($string, $find, $change);
+        //
+        //     //Assert
+        //     $this->assertEquals("If I were a apple haging on a tree", $result);
+        // }
     }
 
     // Run in terminal in project folder
