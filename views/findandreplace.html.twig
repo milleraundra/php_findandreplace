@@ -3,26 +3,39 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
-        <title>EXAMPLE</title>
+        <title>Find and Replace</title>
     </head>
 
         <body>
           <div class='container'>
             <div class='jumbotron'>
-              <h1>EXAMPLE</h1>
-              <p><em>You can't ping without your pong</em></p>
+              <h1>Find and Replace</h1>
+              <p><em>idris ilba replace word, and other stuff</em></p>
             </div>  <!-- /JUMBOTRON -->
 
         <!-- Row: 1 -->
             <div class='row'>
               <div class='col-sm-6'>
-                  <h2>Enter a number, brah!</h2>
+                  <h2>Find and Replace</h2>
+
                   <form action='/userInput'>
                       <div class='form-group'>
-                        <label for='number'>Number</label>
-                        <input id='number' name='number' type='number'>
+                        <label for='sentence'>Enter a word, phrase, or sentence:</label>
+                        <input id='sentence' name='sentence' type='text'>
                       </div>
+
+                      <div class='form-group'>
+                        <label for='find'>Enter a target word:</label>
+                        <input id='find' name='find' type='text'>
+                      </div>
+
+                      <div class='form-group'>
+                        <label for='change'>Enter a replacement word:</label>
+                        <input id='change' name='change' type='text'>
+                      </div>
+
                       <button class='btn btn-warning' type='submit'>Submit!</button>
+
                 </form>
             </div>  <!-- /col-sm-6 -->
           </div>  <!-- /Row -->
@@ -31,11 +44,8 @@
         <!-- Row: 2 -->
           <div class="row">
               <div class="col-sm-6">
-                    <ul>
-                        <!-- {% for result in results %}
-                            <li>{{ result }}</li>
-                        {% endfor %} -->
-                    </ul>
+
+                  <h3>{{ result }}</h3>
 
               </div><!--col-sm-6-->
           </div><!--row-->
