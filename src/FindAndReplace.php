@@ -5,11 +5,7 @@
         private $change;
         private $sentence;
 
-    //     function __construct($contact_name)
-    //     {
-    //         $this->name = $contact_name;
-    //     }
-    //
+
         function swapWords($string, $find, $change)  // input is "string"
         {
             $clean_string_array = explode(" ", $string);
@@ -37,18 +33,6 @@
 
 
     }
-
-// push index from $new_string[$index]
-// $string_array[$index] = $change;
-
-// $pg_url = preg_replace("/[^a-zA-Z 0-9]+/", " ", $pg_url);
-//
-// // $string_array[$index] = strtolower($string_array[$index]);
-// // $find = strtolower($find);
-//
-//
-//
-// $string_array[$index] = str_replace($find, $change, $string_array[$index]);
 
 
 
