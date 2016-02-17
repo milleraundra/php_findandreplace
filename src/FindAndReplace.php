@@ -14,7 +14,10 @@
             {
                 $string_array = explode(" ", $string);  // "array"
                 foreach ($string_array as $index => $word) {
-                    if ($word == $find) {
+                    $string_array[$index] = strtolower($string_array[$index]);
+                    $find = strtolower($find);
+
+                    if ($string_array[$index] == $find) {
                         $string_array[$index] = $change;
                     }
                 }
