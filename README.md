@@ -1,33 +1,23 @@
-# PHP Start up folders - DOWNLOAD ZIP, do not clone
+#php_findandreplace
 
-#### _Enter amount user is willing to spend, to see list of cars user can buy, 2/7/2016_
-
-#### By _** Ronando **_
+####By Aundra Miller and Ronando Long
 
 ## Description
+This is a simple PHP project to become familiar with writing PHP code using Silex routing, Twig templates, and PHPUnit testing. Users first enter a word or phrase into a form. Then they enter a word they want to target and what they want to replace it with. The function returns the adjusted input.
 
-_Dealership app will accept user input for dollar amount willing to spend. App spits out car objects priced below what user input is._
+**This application may not be complete. Its sole purpose was to be a class exercise.**
 
-## Setup/Installation Requirements
+##Setup and Installation
+* Clone this repository
+* From the terminal, run `composer install` in the root project directory.
+* Run `apachectl start` in the root project directory.
+* Navigate to the `web` folder and run `php -S localhost:8000`.
+* Open `localhost:8000` in a browser window.
 
-* _run $ composer install in terminal in web folder once you have cloned the repository. But don't clone, download zip._
-* _Silex is a dependency of the project. _
+##Support and Contact
+If you have questions, contact me at miller.aundra@gmail.com
 
-## Known Bugs
+##License
+The MIT License (MIT)
 
-_{Currently does not error handle. Inputted text will break it.}_
-
-## Support and contact details
-
-_{No support available.}_
-
-## Technologies Used
-
-* _HTML_
-* _CSS_
-* _PHP_
-* _Blood, sweat, tears_
-
-### License
-
-*No license.*
+Copyright (c) 2016 Aundra Miller
